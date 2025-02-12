@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    color: white;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 550px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid white;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.question-box {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.option-button {
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.option-button:hover {
+    background: white;
+    color: #2575fc;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.correct {
+    color: #4CAF50;
+    font-size: 22px;
+}
+
+.incorrect {
+    color: #FF3B3B;
+    font-size: 22px;
+}
